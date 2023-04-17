@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>E-commerce product page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+    .inc_dec #button_cart{
+      color: white;
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+  <div class="header">
+      <img class="logo" src="images/logo.svg" alt="">  
+
+  
+      <a id="links" href="">Collections</a>
+      <a id="links" href="">Men</a>
+      <a id="links" href="">Women</a>
+      <a id="links" href="">About</a>
+      <a id="links" href="">Contact</a>
+    
+
+      <div class="last_links">
+        <a class="dropdown_list"><img id="cart_pic" src="images/icon-cart.svg" alt=""/></a>
+        <div class="dropdown">
+          <p>cart</p>
+        </div>
+        
+        <img id= "profile_pic" src="images/image-avatar.png" alt=""/>
+      </div>
+      
+  </div>
+  
+  <hr>
+
+    <div class="main">
+      <div class="all_details">
+        
+        <!-- all madale -->
+
+        <div id="myModal" class="modal">
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <img src="" id="modal-image" />
+          </div>
+        </div>
+        
+        <div class="big_pic">
+          <img type="image" id="change_big_pic" src="/images/image-product-1.jpg" alt=""/>
+        </div>
+      
+      <div class="product_details">
+        
+          <h4>Sneaker Company</h4>
+
+          <h2>Fall Limited Edition Sneakers</h2>
+
+          <p id="text">These low-profile sneakers are your perfect casual wear companion. Featuring a 
+          durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
+        
+          <h3>$125.00<span>50%</span></h3>  
+          <del>$250.00</del>
+
+          <div class="products">
+            <!-- reder products here -->
+          </div> 
+          <div class="all_buttons">
+          <div class="inc_dec">
+            <img id= "decrease" onclick="decreaseValue()" src="./images/icon-minus.svg" value="decreaseValue">
+              <input id="number" value="0"/>  
+            <img id= "increase" onclick="increaseValue()" src="./images/icon-plus.svg" value="increaseValue">
+          </div>  
+          <button><img id="button_cart" src="images/icon-cart.svg" alt=""/>Add to Cart</button>
+        </div> 
+      
+    </div>
+       
+  </div>
+    
+      
+      
+    </div>
+
+    <div class="detail_pic">
+      <img class="per_pic" src="/images/image-product-1.jpg" onclick="shoesGallery(this)" alt=""/>
+      <img class="per_pic" src="/images/image-product-2.jpg" onclick="shoesGallery(this)" alt=""/>
+      <img class="per_pic" src="/images/image-product-3.jpg" onclick="shoesGallery(this)" alt=""/>
+      <img class="per_pic" src="/images/image-product-4.jpg" onclick="shoesGallery(this)" alt=""/>
+    </div>
+  </div>
+</div>
+
+  
+<!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Dena Elzubair Eltahir</a>.
+  </div> -->
+
+  <script src="./myjavasc.js">
+    
+  </script>
+
+  <script src="./products.js"></script>
+</body>
+</html>
+
+
+
